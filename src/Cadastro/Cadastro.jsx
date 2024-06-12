@@ -3,6 +3,7 @@ import {FaUser, FaPhone, FaIdCard, FaMapMarkerAlt, FaCity, FaHome, FaHashtag, Fa
 import { useState } from "react";
 
 import "./Cadastro.css";
+import { IoIosArrowDropdownCircle } from "react-icons/io";
 
 const Cadastro = () => {
 
@@ -49,8 +50,8 @@ const Cadastro = () => {
                 <FaMapMarkerAlt className="icon" />
             </div>
 
-            <div >
-                <select id="input-field">
+            <div className="select-field">
+                <select className="mostly-customized-scrollbar">
                     <option selected>Estado</option>
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
@@ -80,7 +81,7 @@ const Cadastro = () => {
                     <option value="SE">Sergipe</option>
                     <option value="TO">Tocantins</option>
                 </select>
-                <FaMapMarkerAlt className="icon" />
+                <IoIosArrowDropdownCircle className="icon" />
             </div>
 
             <div className="input-field">

@@ -5,13 +5,15 @@ import Cadastro from './Cadastro/Cadastro';
 function App() {
 
   return (
-    <div className="App">
-       <div className="backgroundAnimation">
+    <>
+      <div className="backgroundAnimation">
         <AnimationBackground />
-       </div>
+      </div>
 
-      <Cadastro />
-    </div>
+      <div className="App">
+        <Cadastro />
+      </div>
+    </>
   );
 }
 
